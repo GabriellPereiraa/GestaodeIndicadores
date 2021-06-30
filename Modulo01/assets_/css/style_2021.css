@@ -1,0 +1,359 @@
+/* 
+#RECURSOS NECESSARIOS
+
+Título
+Sub título
+Sub sub título
+Texto
+Importante
+Imagem com legenda
+Fique Atento
+Curiosidade
+Nota de rodapé
+Atividade
+Saiba Mais
+Texto negrito
+*/
+
+
+:root{
+    --FontePadrao: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !important;
+
+    /* Sendo utilizado */
+    --Cor01: #808080;
+    --CorPreto: #000000;
+
+    /* Cores do estado */
+    --VerdeEstado:#274F23;
+    --AzulEstado00: #87D1E6;
+    --AzulEstado01: #56A7B2;
+    --AmareloEstado: #FFC805;
+    --CinzaEstado: #465564;
+    --LaranjaEstado: #008445;
+    --AmareloEstadoEscuro: #FFCC00;
+    --VerdeClaroEstado: #56A86E;
+
+    
+    /* Cores das caixas */
+    --CorImportante: #FFA73E;
+    --CorFiqueAtento: #FFDE14;
+    --CorCuriosidade: #B6A7D8;
+    --CorAtividade: #92C56E;
+    --CorSaibaMais: #85CEE3;
+    --CorVideo: #FF0000;
+    --CorVerdeEstado: #56A86E;
+
+    --CorTituloCaixas:#274F23;
+    --CorTituloIcones:#274F23;
+}
+
+/* NOVOS ESTILOS - BEGIN */
+
+/* #################################### */
+/* #################################### */
+/* #################################### */
+
+/* CORES */
+.CorVerdeEstado {
+    color:var(--VerdeEstado);
+}
+
+.CorAzulEstado00 {
+    color:var(--AzulEstado00);
+}
+
+.CorAzulEstado01 {
+    color:var(--AzulEstado01);
+}
+
+.CorAmareloEstado {
+    color:var(--AmareloEstado);
+}
+
+.CorCinzaEstado {
+    color:var(--CinzaEstado);
+}
+
+.CorLaranjaEstado {
+    color:var(--LaranjaEstado);   
+}
+
+.CorAmareloEstadoEscuro {
+    color: var(--AmareloEstadoEscuro);
+}
+
+.CorVerdeClaroEstado {
+    color: var(--VerdeClaroEstado);
+}
+
+/* #################################### */
+/* TEXTOS */
+/* Titulo */
+.Titulo {
+    font-family: var(--FontePadrao);
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #44833D;
+}
+
+/* Sub Titulo */
+.SubTitulo {
+    font-family: var(--FontePadrao);
+    font-size: 1.6em;   
+    font-weight: 600; 
+    color: #56A86E;
+}
+
+/* Sub Sub Titulo */
+.SubSubTitulo {
+    font-family: var(--FontePadrao);
+    font-size: 1.4em;   
+    font-weight: 500; 
+    color: #92C56E; 
+}
+
+/* Texto */
+.Texto {
+    font-family: var(--FontePadrao);
+    font-size: 1.1em;
+    color: var(--CorPreto);
+} 
+
+/* Titulo da Figura */
+.TituloFigura {
+    font-family: var(--FontePadrao);
+    font-size: 0.8em;
+    color: var(--CorPreto);
+}
+
+/* Fonte/Leganda da Figura */
+.FonteFigura {
+    font-family: var(--FontePadrao);
+    font-size: 0.8em;
+    color: var(--CorPreto);
+}
+
+/* Nota de rodapé */
+.NotaDeRodape {
+    font-family: var(--FontePadrao);
+    font-size: 0.8em;
+    color: var(--CorPreto);
+    padding-left: 2em;
+}
+
+/* Small Caps */
+.SmallCaps {
+    font-variant: small-caps;
+}
+
+/* #################################### */
+/* IMPORTANTE */
+/* Importante Titulo*/
+.ImportanteCaixa {
+    border: 2px solid var(--CorImportante);
+}
+.ImportanteTitulo {
+    color: var(--CorTituloCaixas);
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-left: 0.5em;
+    background-color: var(--CorImportante);
+}
+.ImportanteTitulo::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f06a";
+    color: var(--CorTituloIcones);
+    font-size: 1.2em;
+}
+/* Importante Texto */
+.ImportanteTexto {
+    font-family: var(--FontePadrao);
+    font-size: 1.1em;
+    color: var(--Cor01);
+    padding: 0.5em;
+}
+
+/* #################################### */
+/* FIQUE ATENTO */
+/* Fique Atento Titulo*/
+.FiqueAtentoCaixa {
+    border: 3px solid var(--CorFiqueAtento);
+}
+.FiqueAtentoTitulo {
+    color: var(--CorTituloCaixas);
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-left: 0.5em;
+    background-color: var(--CorFiqueAtento);
+}
+.FiqueAtentoTitulo::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f0a1";
+    color: var(--CorTituloIcones);
+    font-size: 1.2em;
+}
+/* Fique Atento Texto */
+.FiqueAtentoTexto {
+    font-family: var(--FontePadrao);
+    font-size: 1.1em;
+    color: var(--CorPreto);
+    padding: 0.5em;
+}
+
+/* #################################### */
+/* CURIOSIDADE */
+/* Curiosidade Titulo*/
+.CuriosidadeCaixa {
+    border: 1px solid var(--CorCuriosidade);
+}
+.CuriosidadeTitulo {
+    color: var(--CorTituloCaixas);
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-left: 0.5em;
+    background-color: var(--CorCuriosidade);
+}
+.CuriosidadeTitulo::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f0eb";
+    color: var(--CorTituloIcones);
+    font-size: 1.2em;
+}
+/* Curiosidade Texto */
+.CuriosidadeTexto {
+    font-family: var(--FontePadrao);
+    font-size: 1.2em;
+    color: var(--Cor01);
+    padding: 0.5em;
+}
+
+/* #################################### */
+/* ATIVIDADE */
+/* Atividade Titulo*/
+.AtividadeCaixa {
+    border: 1px solid var(--CorAtividade);
+}
+.AtividadeTitulo {
+    color: var(--CorTituloCaixas);
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-left: 0.5em;
+    background-color: var(--CorAtividade);
+}
+.AtividadeTitulo::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f044";
+    color: var(--CorTituloIcones);
+    font-size: 1.2em;
+}
+/* Atividade Texto */
+.AtividadeTexto {
+    font-family: var(--FontePadrao);
+    font-size: 1.2em;
+    color: var(--Cor01);
+    padding: 0.5em;
+}
+
+/* #################################### */
+/* SAIBA MAIS */
+/* Saiba Mais Titulo*/
+.SaibaMaisCaixa {
+    border: 1px solid var(--CorSaibaMais);
+}
+.SaibaMaisTitulo {
+    color: var(--CorTituloCaixas);
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-left: 0.5em;
+    background-color: var(--CorSaibaMais);
+}
+.SaibaMaisTitulo::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f0fe";
+    color: var(--CorTituloIcones);
+    font-size: 1.2em;
+}
+/* Saiba Mais Texto */
+.SaibaMaisTexto {
+    font-family: var(--FontePadrao);
+    font-size: 1.2em;
+    color: var(--Cor01);
+    padding: 0.5em;
+}
+
+/* #################################### */
+/* VIDEO */
+/* Vídeo - Caixa */
+.VideoCaixa {
+    border: 1px solid var(--CorVideo);
+    padding: 1em;
+}
+
+/* #################################### */
+/* BORDAS */
+/* Bordas */
+.BordaAzulEstado00 {
+    border: solid 1px var(--AzulEstado00);
+    padding: 1em;
+    background-color: var(--AzulEstado00);
+}
+
+.BordaAzulEstado01 {
+    border: solid 1px var(--AzulEstado01);
+    padding: 1em;
+    /* background-color: var(--AzulEstado01); */
+}
+
+.BordaAmareloEstado {
+    border: solid 1px var(--AmareloEstado);
+    padding: 1em;
+}
+
+.BordaCinzaEstado {
+    border: solid 1px var(--CinzaEstado);
+    padding: 1em;
+}
+
+.BordaVerdeEstado {
+    border: solid 2px var(--CorVerdeEstado);
+    padding: 1em;
+}
+
+/* #################################### */
+/* ALTERAÇÕES BOOTSTRAP */
+/* Remoção sombra */
+.card {
+    box-shadow: none !important;
+}
+
+/* Remoção cor do header */
+.card-header {
+    background-color: #FFF !important;
+}
+
+/* #################################### */
